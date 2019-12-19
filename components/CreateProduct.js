@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { 
-    View, 
-    Text, 
-    StyleSheet, 
+import {
+    View,
+    Text,
+    StyleSheet,
     SafeAreaView,
     Linking,
     Platform,
     IntentLauncherAndroid,
     Button,
     Image,
-    CameraRoll, 
+    CameraRoll,
 } from 'react-native';
 import Constants from 'expo-constants';
 import { Camera } from 'expo-camera';
@@ -98,7 +98,7 @@ export default class CreateProduct extends React.Component {
                     <Button title="Back camera" onPress={this.useBackCamera} />
                 )}
                 <Camera style={styles.cameraView} type={type} ref={this.cameraRef}>
-                    
+
                 </Camera>
                 <Button title="Take photo" onPress={this.handleTakePhoto} />
             </View>
@@ -107,13 +107,13 @@ export default class CreateProduct extends React.Component {
 
     render = () => {
         return (
-            
+
             <SafeAreaView style={styles.container}>
                 <View>{this.renderCameraView()}</View>
             </SafeAreaView>
         );
     };
-    
+
 }
 
 

@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const styles = StyleSheet.create({
     container: {
         borderColor: 'white',
-        borderWidth: 5, 
+        borderWidth: 5,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         borderWidth: 1,
         backgroundColor: '#fff',
-        textAlign:'center',
+        textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 15,
@@ -33,12 +33,12 @@ export default class NewProductInfo extends React.Component {
     render = () => {
         return (
             <View styles={styles.container}>
-                <TextInput placeholder= "Produkt-navn" style={styles.textInput}/>
-                <TextInput placeholder= "Pris pr time" style={styles.textInput}/>
-                <TextInput placeholder= "Kategori" style={styles.textInput}/>
-                <TextInput placeholder= "Beskrivelse" style={styles.textInput}/>
-                <TextInput placeholder= "Lokation" style={styles.textInput}/>
-                <Button title="Tilføj produktet" onPress={this.handleGoToHome}/>
+                <TextInput placeholder="Produkt-navn" style={styles.textInput} />
+                <TextInput placeholder="Pris pr time" style={styles.textInput} />
+                <TextInput placeholder="Kategori" style={styles.textInput} />
+                <TextInput placeholder="Beskrivelse" style={styles.textInput} />
+                <TextInput placeholder="Lokation" style={styles.textInput} />
+                <Button title="Tilføj produktet" onPress={this.handleGoToHome} />
             </View>
         )
     }

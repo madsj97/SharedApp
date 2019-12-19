@@ -65,13 +65,13 @@ export default class AllProductsScreen extends React.Component {
     renderItem = ({ item }) => (
         <TouchableOpacity>
             <ListItem
-            title={item.name}
-            subtitle={item.subtitle}
-            leftAvatar={{ source: { uri: item.avatar_url } }}
-            bottomDivider
-            chevron
-            onPress={() => this.handleGoToProductDetails(item.screen)}
-        />
+                title={item.name}
+                subtitle={item.subtitle}
+                leftAvatar={{ source: { uri: item.avatar_url } }}
+                bottomDivider
+                chevron
+                onPress={() => this.handleGoToProductDetails(item.screen)}
+            />
         </TouchableOpacity>
     )
 
@@ -86,19 +86,3 @@ export default class AllProductsScreen extends React.Component {
     }
 
 }
-
-
-
-/*render = () => {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>Alle produkter {'\n'}</Text>
-        <TouchableOpacity>
-            <Image styles={styles.image}
-            source={require('../assets/leafblower3.png')} />
-            <Text>Makita løvblæser</Text>
-        </TouchableOpacity>
-      </View>
-    );
-  };
-*/

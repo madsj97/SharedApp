@@ -1,8 +1,10 @@
+/* Hardcoded class that contains details about one of the products
+*/
+
 import * as React from 'react';
 import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 const styles = StyleSheet.create({
-    // Man skal altid angive størrelsen på billeeder som loades fra netværk
     image: {
         width: 200,
         height: 200,
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
 
 export default class Volta extends React.Component {
     goToLocation = () => {
-      this.props.navigation.navigate('Location');  
+        this.props.navigation.navigate('Location');
     };
     render() {
         return (
@@ -40,7 +42,7 @@ export default class Volta extends React.Component {
                 <Text>Rengøring</Text>
                 <Text style={styles.text}>Beskrivelse:</Text>
                 <Text>Nyisat pose</Text>
-                <Button title="Se lokation" onPress={this.goToLocation}/>
+                <Button title="Se lokation" onPress={this.goToLocation} />
             </View>
         );
     }

@@ -1,8 +1,10 @@
+/* Hardcoded class that contains details about one of the products
+*/
+
 import * as React from 'react';
 import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 const styles = StyleSheet.create({
-    // Man skal altid angive størrelsen på billeeder som loades fra netværk
     image: {
         width: 200,
         height: 200,
@@ -37,7 +39,7 @@ export default class FoldingChairs extends React.Component {
                 <Text>Møbler</Text>
                 <Text style={styles.text}>Beskrivelse:</Text>
                 <Text>6 stk</Text>
-                <Button title="Se lokation" onPress={this.goToLocation}/>
+                <Button title="Se lokation" onPress={this.goToLocation} />
             </View>
         );
     }

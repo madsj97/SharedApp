@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { ListItem } from 'react-native-elements';
 
 const list = [
@@ -22,7 +22,7 @@ const list = [
 
 const styles = StyleSheet.create({
     list: {
-        
+
     },
 });
 
@@ -35,7 +35,7 @@ export default class SettingsScreen extends React.Component {
 
     renderItem = ({ item }) => (
         <TouchableOpacity>
-            <ListItem 
+            <ListItem
                 title={item.name}
                 bottomDivider
                 chevron

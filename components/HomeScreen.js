@@ -40,7 +40,7 @@ export default class HomeScreen extends React.Component {
                 <Image style={styles.image} source={require('../assets/sharedlogo.png')} />
                 <Text style={styles.text}>JyllingeCommunity{"\n"}</Text>
                 <Button style={styles.button} title="Alle produkter" onPress={this.handleGoToAllProducts} />
-                <Button title="Opret ny vare" onPress={this.handleGoToCreateProduct}/>
+                <Button title="Opret ny vare" onPress={this.handleGoToCreateProduct} />
             </View>
         );
     };

@@ -135,7 +135,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#ecf0f1',
         padding: 8,
     },
-    map: { flex: 1 },
+    map: { 
+        flex: 1 
+    },
     infoBox: {
         height: 100,
         position: 'absolute',
